@@ -1,0 +1,469 @@
+
+
+
+*{
+margin: 0;
+padding: 0;
+
+
+}
+
+
+
+.cairo-<uniquifier> {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
+
+  body{
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+
+  }
+
+nav{
+
+    width: 100%;
+    height: 10vh;
+background-color: rgb(255, 255, 255);
+
+
+}
+
+
+.navitems{
+
+    width: 100%;
+    height: fit-content;
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+font-size: 1.5em;
+
+}
+
+
+.game{
+
+width: 100%;
+height: 80vh;
+
+
+background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+.landtext{
+
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items:center;
+
+
+
+position: relative;
+top: 40%;
+right: 20%;
+
+
+
+}
+
+
+.landtext h1{
+
+
+
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+@media (max-width:500px ) {
+    
+.landtext{
+
+    
+position: relative;
+top: 0;
+right: 0;
+
+   
+
+
+font-size: 3rem;
+flex-direction: column;
+}
+
+.landing{
+
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.landing{
+
+
+width: 100%;
+height: 80vh;
+background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3d405b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   }
+   
+   button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: #fff;
+   }
+   
+   button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   button:hover span {
+    padding-right: 15px;
+   }
+   
+   button:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+
+   button a{
+
+color: #FFFFFF;
+text-decoration: none;
+
+
+   }
+
+
+
+.gamecontain{
+
+width: 100%;
+height: 50vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2em;
+
+}
+
+.boxy{
+
+   
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    
+
+
+
+}
+
+
+
+.buto{
+
+
+
+}
+
+
+.boxy button{
+
+    padding: 10px;
+background-color: blueviolet;
+color: white;
+border-radius: 10px;
+
+}
+
+
+
+
+
+.pillars{
+
+width: 100%;
+height: 70vh;
+background-color: aqua;
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+.pillars h2{
+
+margin-top: 20px;
+font-weight: 900;
+position: relative;
+top: 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: aqua;
+    padding: 20px;
+   
+}
+.box {
+    width: 150px;
+    background-color: #ffffff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.box:hover{
+
+    transform: scale(1.2);
+
+
+}
+
+.box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+.box-text {
+    text-align: center;
+    padding: 0 10px;
+    color: black;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .box {
+        width: 120px;
+    }
+    .box img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100px;
+    }
+    .box img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+.pillars{
+
+height: 90vh;
+
+
+}
+
+
+}
+
+
+
+.menu-list {
+    display: none;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+/* Pop-up content */
+.popup-content {
+    padding: 20px;
+    
+}
+
+.popup-content li{
+
+list-style: none;
+}
+
+.popup-content a{
+
+text-decoration: none;
+color: black;
+}
+
+/* Close button */
+.close-btn {
+    background-color: rgb(148, 154, 193);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    
+}
+/* Overlay to cover the whole screen */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
+
+
+footer{
+
+
+width: 100%;
+height: 50vh;
+background-color: white;
+}
+
+
+footer ul{
+
+   margin-top: 50px;
+    margin-left: 20px;
+color: black;
+list-style: none;
+
+font-size: 1.5rem;
+}
+
+footer h2{
+
+font-size: 2rem;
+font-weight: bold;
+}
+
+footer i{
+
+    font-size: 2rem;
+}
+
+
+
+
+.phoy{
+
+    display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+flex-direction: column;
+
+position: relative;
+bottom: 50%;
+right: 10%;
+}
+
+
+#phoy{
+
+
+    width: 150px;
+    height: 150px;
+ 
+
+
+}

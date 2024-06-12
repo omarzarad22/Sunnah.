@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Sunnah.com</title>
+<link rel="stylesheet" href="index.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+<link rel="icon" href="./img/file.png">
+
+
+
+
+<style>
+
+#o{
+position: absolute;
+z-index: 0;
+width: 100%;
+height: 80vh;
+
+
+}
+
+
+
+#min{
+
+width: 300px;
+height: 300px;
+
+
+position: relative;
+left: 60%;
+transition: transform 0.3s ease;
+}
+
+
+#min:hover{
+
+transform: scale(1.2);
+
+
+}
+
+
+@media (max-width:500px) {
+    
+
+
+
+
+#min{
+
+width: 150px;
+height: 150px;
+position: relative;
+left: 0;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+<body>
+    
+<nav>
+
+
+
+
+
+    <div class="navitems">
+
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
+
+
+        <h2>Sunnah.com</h2>
+
+
+
+
+
+<div class="threenav">
+
+    <i class="fa-solid fa-star-and-crescent"></i>
+    <i class="fa-solid fa-mosque"></i>
+    <i class="fa-solid fa-user"></i>
+
+
+</div>
+<div class="overlay" id="overlay"></div>
+
+<!-- Pop-up container -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <button class="close-btn" id="close-btn">X</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="zaka.html">Zaka Calculator</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="count.html">Count</a></li>
+           
+        </ul>
+    </div>
+</div>
+
+
+<script>
+    // Get elements
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const popup = document.getElementById('popup');
+    const overlay = document.getElementById('overlay');
+
+    // Show pop-up and overlay when menu button is clicked
+    menuBtn.addEventListener('click', function() {
+        popup.style.display = 'block';
+        overlay.style.display = 'block';
+    });
+
+    // Hide pop-up and overlay when close button or overlay is clicked
+    closeBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+    });
+
+    overlay.addEventListener('click', function() {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+    });
+</script>
+    
+
+
+
+</nav>
+
+
+
+<div class="landing">
+
+
+
+<div class="landtext">
+<h1>Al Sallam Alykum </h1>
+
+
+
+<button><span><a href="login.html"> LOGIN </a> </span></button>
+
+
+
+</div>
+
+<img src="./img/file.png" id="min">
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="game">
+
+<div class="gamecontain">
+<div class="boxy">
+<h2>Quiz your islamic Knowledge</h2>
+
+<div class="buto">
+ 
+    <button><a href="game.html">Press to Play Game</a></button>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="pillars">
+
+<h2>5 Pillars of Islam</h2>
+
+    <div class="container">
+        <div class="box">
+            <img src="./img/1st.jpeg" alt="Avatar">
+            <div class="box-text">Salah</div>
+        </div>
+        <div class="box">
+            <img src="./img/kaba.png" alt="Avatar">
+            <div class="box-text">Hajj</div>
+        </div>
+        <div class="box">
+            <img src="./img/ranadan.jpg" alt="Avatar">
+            <div class="box-text">Ramadan</div>
+        </div>
+        <div class="box">
+            <img src="./img/OIP.jpeg" alt="Avatar">
+            <div class="box-text">Al Sheahada</div>
+        </div>
+        <div class="box">
+            <a href="zaka.html">
+            <img src="./img/zaka.webp" alt="Avatar">
+            <div class="box-text">Zakah</div>
+            </a>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<footer>
+
+
+<ul class="menu">
+<li><h2>Menu</h2></li>
+
+    <li>Call Us</li>
+<li>About</li>
+<li>thank you Akhi</li>
+<br>
+<span>
+    <a> <i class="fa-brands fa-instagram"></i></a>
+     <i class="fa-brands fa-facebook"></i>
+     <i class="fa-brands fa-whatsapp"></i>
+   </span>
+
+
+
+</ul>
+
+
+<div class="phoy">
+    <img src="./img/al-shaheed-icon-vector (1).jpg" id="phoy">
+    <br>
+<h2>Sunnah.com</h2>
+</div>
+
+
+
+<hr>
+    <div class="copyright">
+      &copy; 2024 Zarad . All rights reserved.
+      <br>
+<br>
+    </div>
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
